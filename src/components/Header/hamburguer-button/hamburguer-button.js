@@ -8,7 +8,6 @@ function HamburguerButton() {
         </button>
     );
 
-
 }
 
 function fold() {

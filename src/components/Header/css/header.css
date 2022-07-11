@@ -6,6 +6,9 @@
 #hamburguer-button {
     height      : 100%;
     width       : 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     float       : right;
     margin-right: 4%;
     background  : none;

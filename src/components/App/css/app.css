@@ -1,0 +1,85 @@
+#app {
+    height        : 90vh;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+#logo-section {
+    margin-top     : 4%;
+    display        : flex;
+    justify-content: center;
+    height         : 14%;
+    margin-right   : 10%;
+}
+
+#title-wrapper {
+    position: relative;
+}
+
+#title {
+    font-size: 1.9em;
+    position : absolute;
+    bottom   : 0%;
+}
+
+#article-title {
+    margin-top: 7%;
+    font-size : 2.2rem;
+}
+
+#article-container {
+    width          : 50%;
+    display        : flex;
+    flex-direction : column;
+    text-align     : center;
+    align-items    : center;
+    justify-content: center;
+}
+
+#article {
+    width     : 40%;
+    margin-top: 3%;
+    font-size : large;
+}
+
+#buttons-container {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 6%;
+}
+
+.standard-buttons {
+    height          : 2rem;
+    width           : 9em;
+    border-radius   : 7px;
+    border-style    : none;
+    font-weight     : bolder;
+    background-color: rgb(12, 198, 254);
+}
+
+.standard-buttons:hover {
+    cursor: pointer;
+}
+.standard-buttons:nth-child(1):active {
+    background-color: rgb(15, 182, 233);
+}
+
+.standard-buttons:nth-child(2):hover {
+    color: rgb(12, 144, 184);
+}
+
+.standard-buttons:nth-child(2):active {
+    color: rgb(12, 198, 254);
+}
+
+.standard-buttons:active {
+    cursor: auto;
+}
+
+.standard-buttons:nth-child(2) {
+    margin-top: 6%;
+    background: none;
+    color     : rgb(12, 198, 254);
+}
