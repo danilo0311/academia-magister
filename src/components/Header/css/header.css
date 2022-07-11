@@ -1,0 +1,27 @@
+#app-header {
+    height: 10vh;
+    width : 100%;
+}
+
+#hamburguer-button {
+    height      : 100%;
+    width       : 5%;
+    float       : right;
+    margin-right: 4%;
+    background  : none;
+    border-style: none;
+}
+
+.hamburguer-button-lines {
+    height          : 3%;
+    width           : 80%;
+    background-color: white;
+}
+
+.hamburguer-button-lines:nth-child(2) {
+    margin-top: 15%;
+}
+
+.hamburguer-button-lines:nth-child(3) {
+    margin-top: 15%;
+}
