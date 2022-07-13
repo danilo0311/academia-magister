@@ -19,6 +19,7 @@
     height          : 3%;
     width           : 80%;
     background-color: white;
+    transition: 0.44s;
 }
 
 .hamburguer-button-lines:nth-child(2) {
