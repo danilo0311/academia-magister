@@ -6,7 +6,7 @@ class StudentCategory extends React.Component {
 
         return (
 
-            <section className="specialization-wrapper">
+            <section className="standard-flex-wrapper">
 
                 <div id="specialization-select-option" className="select-container">
 

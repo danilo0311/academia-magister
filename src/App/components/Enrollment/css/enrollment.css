@@ -6,7 +6,7 @@
     width           : 0%;
     right           : 0;
     transition      : 0.44s;
-
+    
 }
 
 .enrollment-step {
@@ -90,5 +90,12 @@
     border-color : rgba(151, 151, 151, 0.73);
     border-width : 0.09rem;
     border-radius: 7px;
+
+}
+
+.standard-flex-wrapper {
+
+    display        : flex;
+    justify-content: center;
 
 }

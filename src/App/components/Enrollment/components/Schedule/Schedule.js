@@ -5,6 +5,7 @@ import './css/schedule.css';
 import ComponentName from "./components/ComponentName";
 import Modality from "./components/Modality";
 import Schedules from "./components/Schedules";
+import NextStepButton from "./components/NextStepButtons";
 
 class Schedule extends React.Component {
 
@@ -20,7 +21,8 @@ class Schedule extends React.Component {
 
                     <Modality></Modality>
                     <Schedules></Schedules>
-
+                    <NextStepButton></NextStepButton>
+                    
                 </div>
 
             </div>

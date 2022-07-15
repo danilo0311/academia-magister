@@ -6,7 +6,7 @@ function NextStepButton() {
 
     return (
 
-        <section className="specialization-wrapper">
+        <section className="standard-flex-wrapper">
 
             <button id="specialization-next-button" className="next-button" onClick={markAsCompleted}>Siguiente</button>
 

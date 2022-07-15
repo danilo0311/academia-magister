@@ -20,7 +20,7 @@ class Specialization extends React.Component {
 
                 <div id="specialization-component-inputs">
 
-                    <section className="specialization-wrapper">
+                    <section className="standard-flex-wrapper">
                         
                         <Fields></Fields>
                         <Provinces></Provinces>

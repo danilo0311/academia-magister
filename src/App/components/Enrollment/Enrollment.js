@@ -1,5 +1,7 @@
 import React from "react";
+
 import './css/enrollment.css';
+
 import Specialization from "./components/Specialization/Specialization";
 import Schedule from "./components/Schedule/Schedule";
 
