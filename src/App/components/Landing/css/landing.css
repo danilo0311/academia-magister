@@ -1,0 +1,78 @@
+#landing-container {
+
+    height        : 100vh;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    overflow      : hidden;
+    transition    : 0.44s;
+    color         : white;
+}
+
+.landing-component {
+
+    transition: 0.67s;
+
+}
+
+#button-start {
+
+    color: white;
+
+}
+
+#enrollment-progress-container {
+
+    width     : 47%;
+    opacity   : 0;
+    transition: 0.65s;
+    display   : none;
+
+}
+
+#enrollment-progress {
+
+    height    : 100%;
+    width     : 161%;
+    margin-top: 10vh;
+
+}
+
+.steps-to-subscribe {
+
+    height  : 24%;
+    width   : 100%;
+    display : flex;
+    overflow: hidden;
+
+}
+
+.circle-element {
+
+    height          : 25px;
+    width           : 25px;
+    border-radius   : 50%;
+    background-color: rgb(255, 255, 255);
+    display         : flex;
+    justify-content : center;
+
+}
+
+.line-element {
+
+    height          : 143%;
+    width           : 4px;
+    margin-top      : 100%;
+    background-color: rgba(255, 255, 255, 0.322);
+
+}
+
+.step-title {
+
+    font-size  : 1vw;
+    height     : max-content;
+    margin-top : 1%;
+    margin-left: 5%;
+
+}

@@ -1,0 +1,59 @@
+#enrollment-container {
+
+    position        : absolute;
+    background-color: white;
+    height          : 100%;
+    width           : 0%;
+    right           : 0;
+    transition      : 0.44s;
+
+}
+
+.enrollment-step {
+
+    height        : 100%;
+    width         : 100%;
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    color         : black;
+    overflow      : hidden;
+
+}
+
+.enrollment-component-title {
+    height     : max-content;
+    width      : max-content;
+    margin-top : 10vh;
+    font-size  : 200%;
+    font-weight: bolder;
+    color      : rgb(94, 94, 116);
+}
+
+
+
+.user-hint {
+
+    color: rgb(158, 158, 185);
+
+}
+
+.custom-select-input {
+
+    height       : 2.01rem;
+    width        : 116%;
+    display      : flex;
+    margin-top   : 7%;
+    border-style : solid;
+    border-width : 0.094rem;
+    border-radius: 7px;
+    border-color : rgb(193, 193, 193);
+
+}
+
+.standard-label {
+
+    font-weight: bold;
+    color      : rgb(94, 94, 116);
+
+}

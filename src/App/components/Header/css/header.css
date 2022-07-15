@@ -1,0 +1,40 @@
+#header {
+    height  : 10vh;
+    width   : 100%;
+    position: absolute;
+}
+
+#hamburguer-button {
+    height         : 85%;
+    width          : 4%;
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    align-items    : center;
+    float          : right;
+    margin-right   : 4%;
+    background     : none;
+    border-style   : none;
+    cursor         : pointer;
+    overflow       : hidden;
+}
+
+#hamburguer-button:active {
+    cursor: auto;
+}
+
+.hamburguer-button-lines {
+    height          : 5%;
+    width           : 80%;
+    border-radius   : 20px;
+    transition      : 0.44s;
+    background-color: white;
+}
+
+.hamburguer-button-lines:nth-child(2) {
+    margin-top: 15%;
+}
+
+.hamburguer-button-lines:nth-child(3) {
+    margin-top: 15%;
+}
