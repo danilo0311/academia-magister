@@ -1,7 +1,10 @@
 import React from "react";
+
+import './css/schedule.css';
+
 import ComponentName from "./components/ComponentName";
 import Modality from "./components/Modality";
-import './schedule.css';
+import Schedules from "./components/Schedules";
 
 class Schedule extends React.Component {
 
@@ -14,8 +17,10 @@ class Schedule extends React.Component {
                 <ComponentName></ComponentName>
 
                 <div id="schedule-components-container">
+
                     <Modality></Modality>
-                    
+                    <Schedules></Schedules>
+
                 </div>
 
             </div>

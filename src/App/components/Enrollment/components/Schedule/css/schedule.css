@@ -1,0 +1,76 @@
+.schedule-container {
+
+    display: none;
+
+}
+
+#schedule-components-container {
+
+    height        : 100%;
+    width         : 100%;
+    align-items   : center;
+    display       : flex;
+    flex-direction: column;
+
+}
+
+#schedule-container {
+
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+
+}
+
+#schedule-component-title {
+
+    width     : 57%;
+    text-align: center;
+
+}
+
+#modality-container {
+
+    height           : max-content;
+    display          : flex;
+    flex-direction   : column;
+    margin-top       : 4%;
+
+}
+
+.modality-option-container {
+
+    width: 135%;
+
+}
+
+.modality-buttons {
+
+    margin-top  : 2%;
+    font-size   : 67%;
+    width       : 36%;
+    max-width   : 85%;
+    float       : left;
+    margin-right: 12%;
+
+}
+
+#schedules-container {
+
+    margin-top    : 3%;
+    display       : flex;
+    flex-direction: column;
+
+}
+
+#select-schedule {
+
+    margin-top: 3%;
+
+}
+
+.schedule-wrapper {
+
+    width: 60%;
+
+}
