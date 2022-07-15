@@ -1,6 +1,7 @@
 import React from "react";
 import './css/enrollment.css';
 import Specialization from "./components/Specialization/Specialization";
+import Schedule from "./components/Schedule/Schedule";
 
 class Enrollment extends React.Component {
 
@@ -10,6 +11,7 @@ class Enrollment extends React.Component {
             <div id="enrollment-container">
 
                 <Specialization></Specialization>
+                <Schedule></Schedule>
 
             </div>
 

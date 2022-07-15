@@ -57,3 +57,16 @@
     color      : rgb(94, 94, 116);
 
 }
+
+.standard-button {
+
+    height       : 2.01rem;
+    width        : 2.9rem;
+    margin-right : 5%;
+    margin-top   : 5%;
+    border-style : solid;
+    border-color : rgba(151, 151, 151, 0.73);
+    border-width : 0.09rem;
+    border-radius: 7px;
+
+}
