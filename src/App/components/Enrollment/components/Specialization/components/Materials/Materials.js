@@ -10,7 +10,7 @@ function Materials() {
                 <li id="terms">Consulta condiciones →</li>
 
                 <section className="specialization-wrapper">
-                    <button id="material-button" className="student-category">Material mes a mes</button>
+                    <button id="material-button" className="standard-button">Material mes a mes</button>
                 </section>
 
             </div>

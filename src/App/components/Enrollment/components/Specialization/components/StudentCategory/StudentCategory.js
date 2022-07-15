@@ -14,9 +14,9 @@ class StudentCategory extends React.Component {
                     <li id="terms">Consulta condiciones →</li>
 
                     <div id="student-category-container">
-                        <button id="new-student" value='default' className="student-category" onClick={selectStudentCategory}>No</button>
-                        <button id="former-student" value='default' className="student-category" onClick={selectStudentCategory}>Sí</button>
-                        <button id="recent-student" value='default' className="student-category" onClick={selectStudentCategory}>Sí, después de 2017</button>
+                        <button id="new-student" value='default' className="standard-button" onClick={selectStudentCategory}>No</button>
+                        <button id="former-student" value='default' className="standard-button" onClick={selectStudentCategory}>Sí</button>
+                        <button id="recent-student" value='default' className="standard-button" onClick={selectStudentCategory}>Sí, después de 2017</button>
                     </div>
 
                     <label id="warn-empty-category" className="standard-label-warn-empty-field">* Selecciona una opción</label>
