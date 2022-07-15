@@ -1,11 +1,11 @@
 import React from "react";
-import ComponentName from "./components/ComponentName/ComponentName.js";
+import ComponentName from "./components/ComponentName.js";
 
-import Fields from "./components/Fields/Fields.js";
-import Materials from "./components/Materials/Materials.js";
-import NextStepButton from "./components/NextStepButton/NextStepButton.js";
-import Provinces from "./components/Provinces/Provinces.js";
-import StudentCategory from "./components/StudentCategory/StudentCategory.js";
+import Fields from "./components/Fields.js";
+import Materials from "./components/Materials.js";
+import NextStepButton from "./components/NextStepButton.js";
+import Provinces from "./components/Provinces.js";
+import StudentCategory from "./components/StudentCategory.js";
 import './css/specialization.css';
 
 class Specialization extends React.Component {

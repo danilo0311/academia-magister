@@ -1,6 +1,6 @@
-import Fields from "../Fields/Fields";
-import Provinces from "../Provinces/Provinces";
-import StudentCategory from "../StudentCategory/StudentCategory";
+import Fields from "./Fields";
+import Provinces from "./Provinces";
+import StudentCategory from "./StudentCategory";
 
 function NextStepButton() {
 
