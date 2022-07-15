@@ -8,7 +8,7 @@ function NextStepButton() {
 
         <section className="specialization-wrapper">
 
-            <button id="specialization-next-button" className="standard-button" onClick={markAsCompleted}>Siguiente</button>
+            <button id="specialization-next-button" className="next-button" onClick={markAsCompleted}>Siguiente</button>
 
         </section>
 

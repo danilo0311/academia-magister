@@ -71,24 +71,6 @@
 
 }
 
-#specialization-next-button {
-
-    transition      : 0.21s;
-    color           : white;
-    width           : 15%;
-    border-radius   : 9px;
-    border-style    : none;
-    background-color: #0cc6fe;
-    box-shadow      : 0px 4px 10px rgba(0, 0, 0, 0.73);
-    cursor          : pointer;
-}
-
-#specialization-next-button:active {
-
-    background-color: #0da2cf;
-
-}
-
 .standard-label-warn-empty-field {
 
     font-size  : 1vw;
