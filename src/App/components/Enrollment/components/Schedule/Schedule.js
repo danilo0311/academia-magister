@@ -5,7 +5,7 @@ import './css/schedule.css';
 import ComponentName from "./components/ComponentName";
 import Modality from "./components/Modality";
 import Schedules from "./components/Schedules";
-import NextStepButton from "./components/NextStepButtons";
+import NextStepButton from "./components/NextStepButton";
 
 class Schedule extends React.Component {
 

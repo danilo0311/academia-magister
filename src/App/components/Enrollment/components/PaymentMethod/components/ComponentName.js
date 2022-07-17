@@ -4,8 +4,8 @@ function ComponentName() {
 
         <section className="standard-flex-wrapper">
 
-            <section id="schedule-component-title" className="enrollment-component-title">
-                <legend>Elige el horario y modalidad que más te acomode</legend>
+            <section id="" className="enrollment-component-title">
+                <legend>Forma de pago</legend>
             </section>
 
         </section>

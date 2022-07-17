@@ -4,6 +4,10 @@ import './css/enrollment.css';
 
 import Specialization from "./components/Specialization/Specialization";
 import Schedule from "./components/Schedule/Schedule";
+import Pricing from "./components/Pricing/Pricing";
+import StudentProfile from "./components/StudentProfile/StudentProfile";
+import Address from "./components/Address/Address";
+import PaymentMethod from "./components/PaymentMethod/PaymentMethod";
 
 class Enrollment extends React.Component {
 
@@ -14,7 +18,11 @@ class Enrollment extends React.Component {
 
                 <Specialization></Specialization>
                 <Schedule></Schedule>
-
+                <Pricing></Pricing>
+                <StudentProfile></StudentProfile>
+                <Address></Address>
+                <PaymentMethod></PaymentMethod>
+                
             </div>
 
         );

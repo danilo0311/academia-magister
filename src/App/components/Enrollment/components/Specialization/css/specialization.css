@@ -11,8 +11,8 @@
     flex-direction: column;
     width         : max-content;
     height        : max-content;
-    margin-top    : 3.5%;
     position      : relative;
+    margin-top    : 3%;
 
 }
 
@@ -25,6 +25,7 @@
 #specialization-select-option {
 
     margin-right: 39%;
+
 }
 
 #terms {

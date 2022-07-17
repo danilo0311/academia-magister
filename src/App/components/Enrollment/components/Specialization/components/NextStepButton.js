@@ -6,7 +6,7 @@ function NextStepButton() {
 
     return (
 
-        <section className="standard-flex-wrapper">
+        <section className="standard-flex-wrapper standard-absolute-wrapper">
 
             <button id="specialization-next-button" className="next-button" onClick={markAsCompleted}>Siguiente</button>
 
@@ -40,10 +40,12 @@ function checkEmptyFields() {
 function markAsCompleted() {
 
     const specializationContainer = document.getElementById('specialization-container');
+    const scheduleContainer = document.getElementById('schedule-container');
 
     if (!checkEmptyFields()) {
 
         specializationContainer.style.display = 'none';
+        scheduleContainer.style.display = 'flex';
 
     }
 

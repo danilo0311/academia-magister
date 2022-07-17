@@ -1,24 +1,16 @@
-.schedule-container {
+#schedule-container {
 
-    display: none;
+    display       : none;
+    align-items   : center;
+    flex-direction: column;
 
 }
 
 #schedule-components-container {
 
-    height        : 100%;
-    width         : 100%;
-    align-items   : center;
-    display       : flex;
-    flex-direction: column;
-
-}
-
-#schedule-container {
-
-    display       : flex;
-    align-items   : center;
-    flex-direction: column;
+    height     : 100%;
+    width      : 100%;
+    align-items: center;
 
 }
 
@@ -31,10 +23,10 @@
 
 #modality-container {
 
-    height           : max-content;
-    display          : flex;
-    flex-direction   : column;
-    margin-top       : 4%;
+    height        : max-content;
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 4%;
 
 }
 

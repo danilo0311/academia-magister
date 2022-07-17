@@ -6,14 +6,18 @@ class Schedules extends React.Component {
 
         return (
 
-            <div id="schedules-container" className="schedule-wrapper">
+            <div className="standard-flex-wrapper">
 
-                <label className="standard-label">Horario</label>
-                <label className="user-hint">(Selecciona una opción)</label>
+                <div id="schedules-container" className="schedule-wrapper">
 
-                <select id="select-schedule" className="custom-select-input">
-                    <option>1 Clase al mes prácticas y programación sábados por la mañana. Grupo 1 de 10 a 14 horas</option>
-                </select>
+                    <label className="standard-label">Horario</label>
+                    <label className="user-hint">(Selecciona una opción)</label>
+
+                    <select id="select-schedule" className="custom-select-input">
+                        <option>1 Clase al mes prácticas y programación sábados por la mañana. Grupo 1 de 10 a 14 horas</option>
+                    </select>
+
+                </div>
 
             </div>
 
