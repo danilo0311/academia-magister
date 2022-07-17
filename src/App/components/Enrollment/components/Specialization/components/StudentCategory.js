@@ -13,7 +13,7 @@ class StudentCategory extends React.Component {
                     <label className="standard-label">¿Has sido alumn@ de Magister?</label>
                     <li id="terms">Consulta condiciones →</li>
 
-                    <input id="student-category" type="text"></input>
+                    <input id="student-category" className="hidden-element" type="text"></input>
 
                     <div id="student-category-container">
                         <button id="new-student" value='default' className="standard-button" onClick={selectStudentCategory}>No</button>

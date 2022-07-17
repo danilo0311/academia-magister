@@ -23,6 +23,12 @@ class Schedules extends React.Component {
 
     }
 
+    getSchedule = () =>{
+
+        return getSelectedSchedule();
+
+    }
+
 }
 
 function createSchedules() {
@@ -54,5 +60,12 @@ setTimeout(() => {
     createSchedules();
 
 }, 200);
+
+function getSelectedSchedule(){
+
+    const schedule = document.getElementById('select-schedule');
+    return schedule.value;
+
+}
 
 export default Schedules;

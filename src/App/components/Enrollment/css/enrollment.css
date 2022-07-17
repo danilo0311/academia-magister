@@ -125,3 +125,6 @@
     width: 97%;
 
 }
+.hidden-element{
+    display: none;
+}

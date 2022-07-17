@@ -1,4 +1,5 @@
 import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
+import Modality from "./Modality";
 
 function NextStepButton() {
 
@@ -19,18 +20,50 @@ function NextStepButton() {
 
 }
 
+function checkEmptyField() {
+
+    let status = true;
+
+    const modality = new Modality();
+
+    if (modality.getModality() !== 'default') {
+
+        status = false;
+
+    }
+    
+    warnEmptyField(status);
+
+    return status;
+
+}
+
+function warnEmptyField(status) {
+
+    const warningMessage = document.getElementById('warn-empty-modality');
+
+    status == true
+        ? warningMessage.style.display = 'initial'
+        : warningMessage.style.display = 'none';
+
+}
+
 function markAsCompleted() {
 
-    const enrollmentProgressBar = new EnrollmentProgressBar();
+    if (!checkEmptyField()) {
 
-    const pricingtContainer = document.getElementById('pricing-container');
-    const scheduleContainer = document.getElementById('schedule-container');
+        const enrollmentProgressBar = new EnrollmentProgressBar();
 
-    scheduleContainer.style.display = 'none';
-    pricingtContainer.style.display = 'initial';
+        const pricingtContainer = document.getElementById('pricing-container');
+        const scheduleContainer = document.getElementById('schedule-container');
 
-    enrollmentProgressBar.hintHandler('hide', 'schedule');
-    enrollmentProgressBar.hintHandler('show', 'pricing');
+        scheduleContainer.style.display = 'none';
+        pricingtContainer.style.display = 'initial';
+
+        enrollmentProgressBar.hintHandler('hide', 'schedule');
+        enrollmentProgressBar.hintHandler('show', 'pricing');
+
+    }
 
 }
 

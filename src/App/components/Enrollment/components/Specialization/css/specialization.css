@@ -72,7 +72,7 @@
     font-family: sans-serif;
     font-style : italic;
     margin-top : 2%;
-    position   : absolute;
+    /* position   : absolute; */
     top        : 100%;
     display    : none;
 
@@ -85,14 +85,8 @@
 }
 
 #specialization-hint-circle {
-    
+
     display         : initial;
     background-color: rgb(10, 56, 104);
-
-}
-
-#student-category {
-
-    display: none;
 
 }
