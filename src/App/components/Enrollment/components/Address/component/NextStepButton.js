@@ -1,4 +1,9 @@
 import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
+import StudentAddress from "./StudentAddress";
+import Location from "./Location";
+import Province from "./Province";
+import PostalCode from "./PostalCode";
+import Consentment from "./Consentment";
 
 function NextStepButton() {
 
@@ -19,9 +24,25 @@ function NextStepButton() {
 
 }
 
+function checkEmptyFields(){
+
+    const studentAddress =  new StudentAddress();
+    const location = new Location();
+    const province = new Province();
+    const postalCode = new PostalCode();
+    const consentments = new Consentment();
+
+    console.log(studentAddress.getAddress());
+    console.log(location.getLocation());
+    console.log(province.getProvince());
+    console.log(postalCode.getPostalCode());
+    console.log(consentments.getConsentments());
+
+}
 
 function markAsCompleted() {
 
+    checkEmptyFields();
     const enrollmentProgressBar = new EnrollmentProgressBar();
 
     const paymentMethodContainer = document.getElementById('payment-method-container');

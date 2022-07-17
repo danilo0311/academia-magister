@@ -71,9 +71,9 @@
     color      : red;
     font-family: sans-serif;
     font-style : italic;
-    margin-top : 2%;
-    /* position   : absolute; */
-    top        : 100%;
+    margin-top : 6%;
+    position   : absolute;
+    /* top        : 100%; */
     display    : none;
 
 }
