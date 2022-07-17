@@ -1,4 +1,4 @@
-import Fields from "./Fields";
+import Fields from "./Fields/Fields.js";
 import Provinces from "./Provinces";
 import StudentCategory from "./StudentCategory";
 import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
