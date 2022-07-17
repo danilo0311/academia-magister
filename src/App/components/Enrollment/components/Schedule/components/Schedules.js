@@ -1,4 +1,5 @@
 import React from "react";
+import Requests from "../../../Requests.js";
 
 class Schedules extends React.Component {
 
@@ -12,10 +13,7 @@ class Schedules extends React.Component {
 
                     <label className="standard-label">Horario</label>
                     <label className="user-hint">(Selecciona una opción)</label>
-
-                    <select id="select-schedule" className="custom-select-input">
-                        <option>1 Clase al mes prácticas y programación sábados por la mañana. Grupo 1 de 10 a 14 horas</option>
-                    </select>
+                    <select id="select-schedule" className="custom-select-input"></select>
 
                 </div>
 
@@ -26,5 +24,35 @@ class Schedules extends React.Component {
     }
 
 }
+
+function createSchedules() {
+
+    const request = new Requests();
+
+    const selectSchedule = document.getElementById('select-schedule');
+
+    request.getSchedules((schedule) => {
+
+        for (let index = 0; index < schedule.length; index++) {
+
+            const option = document.createElement('option');
+            option.setAttribute('class', 'schedule-option');
+            option.setAttribute('value', schedule[index].horario);
+
+            option.textContent = schedule[index].horario;
+            selectSchedule.append(option);
+
+        }
+
+    });
+
+
+}
+
+setTimeout(() => {
+
+    createSchedules();
+
+}, 200);
 
 export default Schedules;

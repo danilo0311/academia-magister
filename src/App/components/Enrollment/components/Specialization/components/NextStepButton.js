@@ -1,4 +1,4 @@
-import Fields from "./Fields/Fields.js";
+import Fields from "./Fields.js";
 import Provinces from "./Provinces";
 import StudentCategory from "./StudentCategory";
 import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
@@ -19,7 +19,7 @@ function NextStepButton() {
 
 function checkEmptyFields() {
 
-    let status = false;
+    let status = true;
 
     const field = new Fields();
     const province = new Provinces();

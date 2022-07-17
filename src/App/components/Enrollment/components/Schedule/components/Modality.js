@@ -1,4 +1,5 @@
 import React from "react";
+import Requests from "../../../Requests.js";
 
 class Modality extends React.Component {
 
@@ -12,15 +13,7 @@ class Modality extends React.Component {
 
                     <label className="standard-label">Modalidad</label>
                     <label className="user-hint">(Selecciona una opción)</label>
-
-                    <section className="modality-option-container">
-
-                        <button id="on-site-button" value="default" className="standard-button modality-buttons">Presencial 2021/2022</button>
-                        <button id="blended-learning-button" value="default" className="standard-button modality-buttons">Semipresencial 2021/2022</button>
-                        <button id="videoconference-button" value="default" className="standard-button modality-buttons">Videoconferencia en directo 2021/2022</button>
-                        <button id="lomloe-adaptation-button" value="default" className="standard-button modality-buttons">Adaptación a la Lomloe 2021/2022</button>
-
-                    </section>
+                    <section id="modalities-wrapper" className="modality-option-container"></section>
 
                 </div>
 
@@ -31,5 +24,33 @@ class Modality extends React.Component {
     }
 
 }
+
+function createModality() {
+
+    const request = new Requests();
+
+    const modalityOptionContainer = document.getElementById('modalities-wrapper');
+
+    request.getModalities((modalities) => {
+
+        for (let index = 0; index < modalities.length; index++) {
+
+            const modality = document.createElement('button');
+
+            modality.setAttribute('class', 'standard-button modality-buttons');
+            modality.textContent = modalities[index].modalidad;
+            modalityOptionContainer.append(modality);
+
+        }
+
+    });
+
+}
+
+setTimeout(() => {
+
+    createModality();
+
+}, 200);
 
 export default Modality;

@@ -1,7 +1,7 @@
 import React from "react";
 import ComponentName from "./components/ComponentName.js";
 
-import Fields from "./components/Fields/Fields.js";
+import Fields from "./components/Fields.js";
 import Materials from "./components/Materials.js";
 import NextStepButton from "./components/NextStepButton.js";
 import Provinces from "./components/Provinces.js";

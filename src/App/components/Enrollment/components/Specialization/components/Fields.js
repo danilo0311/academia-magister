@@ -1,5 +1,5 @@
 import React from "react";
-import Requests from "./Requests";
+import Requests from "../../../Requests.js";
 
 class Fields extends React.Component {
 
@@ -82,11 +82,11 @@ function createProvinces(){
 
 function checkEmptyField(checkDefault) {
 
-    const warnMessage = document.getElementById('warn-empty-field');
+    const warningMessage = document.getElementById('warn-empty-field');
 
     checkDefault == 'default'
-        ? warnMessage.style.display = "initial"
-        : warnMessage.style.display = "none";
+        ? warningMessage.style.display = "initial"
+        : warningMessage.style.display = "none";
 
 }
 
