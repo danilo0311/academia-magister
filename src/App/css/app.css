@@ -105,8 +105,9 @@
 
 .standard-buttons:nth-child(2) {
 
-    margin-top: 6%;
-    background: none;
-    color     : rgb(12, 198, 254);
+    margin-top  : 1%;
+    background  : none;
+    color       : rgb(12, 198, 254);
+    margin-right: 4%;
 
 }

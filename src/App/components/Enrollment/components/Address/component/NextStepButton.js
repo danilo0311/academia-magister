@@ -4,7 +4,12 @@ function NextStepButton() {
 
         <section className="standard-flex-wrapper standard-absolute-wrapper">
 
-            <button id="address-next-button" className="next-button" onClick={markAsCompleted}>Siguiente</button>
+            <div className="standard-flex-colum-wrapper">
+
+                <button id="address-next-button" className="next-button" onClick={markAsCompleted}>Siguiente</button>
+                <button className="standard-buttons go-back-button" onClick={goBack}>Volver atrás</button>
+
+            </div>
 
         </section>
 
@@ -21,6 +26,15 @@ function markAsCompleted() {
     addressContainer.style.display = 'none';
     paymentMethodContainer.style.display = 'initial';
 
+}
+
+function goBack() {
+
+    const studentProfileContainer = document.getElementById('student-profile-container');
+    const addressContainer = document.getElementById('address-container');
+
+    addressContainer.style.display = 'none';
+    studentProfileContainer.style.display = 'initial';
 
 }
 
