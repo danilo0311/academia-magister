@@ -1,7 +1,9 @@
 import React from "react";
+import AboutUs from "./components/AboutUs";
 
 import ComponentName from "./components/ComponentName";
 import NextStepButton from "./components/NextStepButton";
+import PreferedaymentMethod from "./components/PreferedPaymentMethod";
 
 import './css/payment-method.css';
 
@@ -17,8 +19,10 @@ class PaymentMethod extends React.Component {
 
                 <div id="payment-method-components-container">
 
+                    <PreferedaymentMethod></PreferedaymentMethod>
+                    <AboutUs></AboutUs>
                     <NextStepButton></NextStepButton>
-                    
+
                 </div>
 
             </div>

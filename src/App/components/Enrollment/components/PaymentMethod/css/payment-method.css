@@ -1,5 +1,45 @@
 #payment-method-container {
-    
+
     display: none;
+
+}
+
+.payment-method-components {
+
+    width: 79%;
+
+}
+
+.payment-method-button {
+
+    width     : 37%;
+    margin-top: 2%;
+
+}
+
+#recommended-student-button,#not-recommended-student-button{
+
+    width: 14%;
+
+}
+
+.payment-method-button-wrapper {
+
+    justify-content: initial;
+
+}
+
+#select-payment-method-container {
+
+    margin-top: 5%;
+
+}
+
+.payment-method-information-link {
+
+    color      : rgb(12, 198, 254);
+    font-weight: bold;
+    list-style : none;
+    margin-top : 3%;
 
 }
