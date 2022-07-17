@@ -85,7 +85,14 @@
 }
 
 #specialization-hint-circle {
-    display: initial;
-    background-color: rgb(10, 56, 104);
     
+    display         : initial;
+    background-color: rgb(10, 56, 104);
+
+}
+
+#student-category {
+
+    display: none;
+
 }

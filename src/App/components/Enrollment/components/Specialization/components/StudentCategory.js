@@ -13,6 +13,8 @@ class StudentCategory extends React.Component {
                     <label className="standard-label">¿Has sido alumn@ de Magister?</label>
                     <li id="terms">Consulta condiciones →</li>
 
+                    <input id="student-category" type="text"></input>
+
                     <div id="student-category-container">
                         <button id="new-student" value='default' className="standard-button" onClick={selectStudentCategory}>No</button>
                         <button id="former-student" value='default' className="standard-button" onClick={selectStudentCategory}>Sí</button>
@@ -73,7 +75,7 @@ function setVisualHintToSelectedCategory(category) {
             }
 
             if (category.value == 'default') {
-            
+
                 categories[index].style.backgroundColor = '';
 
             }
@@ -87,9 +89,12 @@ function setVisualHintToSelectedCategory(category) {
 function selectStudentCategory(event) {
 
     const category = event.target;
+    const studentCategory = document.getElementById('student-category');
 
     category.value = category.value == 'default' ? category.textContent : 'default';
     setVisualHintToSelectedCategory(category);
+
+    studentCategory.textContent = category.textContent;
 
 }
 
