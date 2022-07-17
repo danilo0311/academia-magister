@@ -1,3 +1,5 @@
+import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
+
 function NextStepButton() {
 
     return (
@@ -25,11 +27,16 @@ function markAsCompleted() {
 
 function goBack() {
 
+    const enrollmentProgressBar = new EnrollmentProgressBar();
+
     const paymentMethodContainer = document.getElementById('payment-method-container');
     const addressContainer = document.getElementById('address-container');
 
     paymentMethodContainer.style.display = 'none';
     addressContainer.style.display = 'initial';
+
+    enrollmentProgressBar.hintHandler('hide', 'payment-method');
+    enrollmentProgressBar.hintHandler('show', 'address');
 
 }
 

@@ -3,7 +3,8 @@ function Pricing() {
     return (
 
         <div id="pricing" className="steps-to-subscribe">
-            <div className="circle-element">
+            <div id="pricing-circle" className="circle-element">
+                <div id="pricing-hint-circle" className="hint-circle"></div>
                 <div className="line-element"></div>
             </div>
             <legend className="step-title">Tarifa</legend>

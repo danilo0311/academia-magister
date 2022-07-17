@@ -77,3 +77,15 @@
     display    : none;
 
 }
+
+#specialization-circle {
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+#specialization-hint-circle {
+    display: initial;
+    background-color: rgb(10, 56, 104);
+    
+}

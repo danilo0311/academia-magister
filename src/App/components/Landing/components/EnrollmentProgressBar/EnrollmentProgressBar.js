@@ -46,6 +46,12 @@ class EnrollmentProgressBar extends React.Component {
 
     }
 
+    hintHandler = (set, hint) => {
+
+        hintHandler(set, hint);
+
+    }
+
 }
 
 function handleComponentVisibility(display) {
@@ -59,5 +65,29 @@ function handleComponentVisibility(display) {
 
 
 }
+
+function hintHandler(set, element) {
+
+    const circleElement = document.getElementById(element + '-circle');
+    const hintCircle = document.getElementById(element + '-hint-circle');
+
+    const show = () => {
+
+        hintCircle.style.display = 'initial';
+        circleElement.style.backgroundColor = 'rgb(255, 255, 255)';
+
+    }
+
+    const hide = () => {
+
+        hintCircle.style.display = 'none';
+        circleElement.style.backgroundColor = 'rgba(255, 255, 255, 0.322)';
+
+    }
+
+    set == 'show' ? show() : hide();
+
+}
+
 
 export default EnrollmentProgressBar;

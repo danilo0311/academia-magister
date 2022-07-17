@@ -53,10 +53,22 @@
     height          : 25px;
     width           : 25px;
     border-radius   : 50%;
-    background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.322);
     display         : flex;
     justify-content : center;
+    position        : relative;
+    align-items     : center;
+
+}
+
+.hint-circle {
+
+    display: none;
+    height          : 20px;
+    width           : 20px;
+    border-radius   : 50%;
+    position        : absolute;
+    background-color: rgb(10, 56, 104);
 
 }
 
@@ -64,7 +76,7 @@
 
     height          : 143%;
     width           : 4px;
-    margin-top      : 100%;
+    margin-top      : 242%;
     background-color: rgba(255, 255, 255, 0.322);
 
 }

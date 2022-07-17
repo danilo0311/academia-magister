@@ -1,3 +1,5 @@
+import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
+
 function NextStepButton() {
 
     return (
@@ -20,22 +22,32 @@ function NextStepButton() {
 
 function markAsCompleted() {
 
+    const enrollmentProgressBar = new EnrollmentProgressBar();
+
     const studentProfileContainer = document.getElementById('student-profile-container');
     const addressContainer = document.getElementById('address-container');
 
     studentProfileContainer.style.display = 'none';
     addressContainer.style.display = 'initial';
 
+    enrollmentProgressBar.hintHandler('hide', 'student-profile');
+    enrollmentProgressBar.hintHandler('show', 'address');
+
 
 }
 
 function goBack() {
+
+    const enrollmentProgressBar = new EnrollmentProgressBar();
 
     const studentProfileContainer = document.getElementById('student-profile-container');
     const pricingContainer = document.getElementById('pricing-container');
 
     studentProfileContainer.style.display = 'none';
     pricingContainer.style.display = 'initial';
+
+    enrollmentProgressBar.hintHandler('hide', 'student-profile');
+    enrollmentProgressBar.hintHandler('show', 'pricing');
 
 }
 

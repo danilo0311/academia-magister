@@ -1,6 +1,7 @@
 import Fields from "./Fields";
 import Provinces from "./Provinces";
 import StudentCategory from "./StudentCategory";
+import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
 
 function NextStepButton() {
 
@@ -39,11 +40,16 @@ function checkEmptyFields() {
 
 function markAsCompleted() {
 
+    const enrollmentProgressBar = new EnrollmentProgressBar();
+
     const specializationContainer = document.getElementById('specialization-container');
     const scheduleContainer = document.getElementById('schedule-container');
 
+
     if (!checkEmptyFields()) {
 
+        enrollmentProgressBar.hintHandler('hide', 'specialization');
+        enrollmentProgressBar.hintHandler('show', 'schedule');
         specializationContainer.style.display = 'none';
         scheduleContainer.style.display = 'flex';
 
