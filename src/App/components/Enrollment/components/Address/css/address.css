@@ -3,3 +3,100 @@
     display: none;
 
 }
+
+#select-exam-community {
+
+    width     : 99%;
+    margin-top: 2%;
+
+}
+
+.address-components {
+
+    width: 80%;
+
+}
+
+#address-components-community {
+
+    margin-top: 6%;
+
+}
+
+#address-component {
+
+    margin-top: 3%;
+
+}
+
+#student-address-input {
+
+    margin-top: 2%;
+
+}
+
+#student-address-inline-wrapper {
+
+    margin-top: 3%;
+
+}
+
+#location-wrapper {
+
+    margin-right: 2%;
+
+}
+
+#consentment-component {
+
+    display: flex;
+
+}
+
+.consentment-checkbox-wrapper {
+
+    display    : flex;
+    align-items: center;
+    height     : max-content;
+    width      : 50%;
+    margin-top : 3%;
+
+}
+
+
+.consentment-checkbox-wrapper:nth-child(2) {
+
+    margin-left: 32%;
+
+}
+
+.consentment-checkboxs {
+
+    height      : 1.7rem;
+    width       : 20px;
+    border-style: solid;
+    border-width: 0.094rem;
+    border-color: rgb(193, 193, 193);
+    margin-right: 2%;
+
+}
+
+.consentment-title {
+
+    font-size: 90%;
+
+}
+
+#data-protection-title::after {
+
+    content: "protección de datos";
+    color  : rgb(12, 198, 254);
+
+}
+
+#legal-information-title::after {
+
+    content: "información legal";
+    color  : rgb(12, 198, 254);
+
+}
