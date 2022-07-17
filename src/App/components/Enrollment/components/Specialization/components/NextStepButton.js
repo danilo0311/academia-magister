@@ -29,7 +29,6 @@ function checkEmptyFields() {
 
     if (!requiredFields.includes('default')) {
 
-        console.log(requiredFields);
         status = false;
 
     }

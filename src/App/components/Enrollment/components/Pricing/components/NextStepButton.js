@@ -27,7 +27,7 @@ function markAsCompleted() {
     const pricingContainer = document.getElementById('pricing-container');
 
     pricingContainer.style.display = 'none';
-    studentProfileContainer.style.display = 'initial';
+    studentProfileContainer.style.display = 'block';
 
     enrollmentProgressBar.hintHandler('hide', 'pricing');
     enrollmentProgressBar.hintHandler('show', 'student-profile');

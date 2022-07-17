@@ -1,5 +1,38 @@
-#student-profile-container{
+#student-profile-container {
 
     display: none;
+
+}
+
+#student-profile-components-container {
+
+    height: 100%;
+    width : 100%;
+
+}
+
+#student-full-name {
+
+    margin-top: 10%;
+    width     : 70%;
+
+}
+
+.student-components {
+
+    display       : flex;
+    flex-direction: column;
+
+}
+
+#student-profile-components-wrapper {
+
+    margin-top: 6%;
+
+}
+
+.student-profile-components-wrapper {
+
+    width: 26%;
 
 }
