@@ -1,27 +1,112 @@
-function AboutUs() {
+import React from "react";
 
-    return (
+class AboutUs extends React.Component {
 
-        <div className="standard-flex-wrapper">
+    render() {
 
-            <section id="select-payment-method-container" className="payment-method-components">
+        return (
 
-                <label className="standard-label">¿Vienes recomendado por alguien?</label>
+            <div className="standard-flex-wrapper">
 
-                <div className="standard-flex-wrapper payment-method-button-wrapper">
+                <section id="select-payment-method-container" className="payment-method-components">
 
-                    <button id="recommended-student-button" className="standard-button payment-method-button">No</button>
-                    <button id="not-recommended-student-button" className="standard-button payment-method-button">Sí</button>
+                    <label className="standard-label">¿Vienes recomendado por alguien?</label>
 
-                </div>
+                    <input id="about-us" className="hidden-element" type="text"></input>
 
-                <li className="payment-method-information-link">Ver información legal →</li>
+                    <div className="standard-flex-wrapper payment-method-button-wrapper">
 
-            </section>
+                        <button id="recommended-student-button" className="standard-button about-us" onClick={selectOption}>No</button>
+                        <button id="not-recommended-student-button" className="standard-button about-us" onClick={selectOption}>Sí</button>
 
-        </div>
+                    </div>
 
-    );
+                    <label id="warn-empty-about-us" className="standard-label-warn-empty-field">* Por favor indicanos cómo escuchaste acerca de nosotros</label>
+                    <li className="payment-method-information-link">Ver información legal →</li>
+
+                </section>
+
+            </div>
+
+        );
+
+    }
+
+    getAboutUs = () => {
+
+        return getSelectedOption();
+
+    }
+
+}
+
+function warnEmptyField(status) {
+
+    const warningMessage = document.getElementById('warn-empty-about-us');
+
+    status == true
+        ? warningMessage.style.display = 'initial'
+        : warningMessage.style.display = 'none';
+
+}
+
+function checkEmptyField() {
+
+    let status = true;
+    const howYouHeardAboutUs = document.getElementById('about-us');
+
+    if (howYouHeardAboutUs.textContent !== '') {
+
+        status = false;
+
+    }
+
+    warnEmptyField(status);
+
+    return status;
+
+}
+
+function setVisualHintToSelectedModality(selectedOption) {
+
+    const optionsAvailable = document.getElementsByClassName('about-us');
+
+    for (let index = 0; index < optionsAvailable.length; index++) {
+
+        if (optionsAvailable[index].textContent !== selectedOption) {
+
+            optionsAvailable[index].style.backgroundColor = '';
+
+        }
+
+    }
+
+}
+
+function selectOption(event) {
+
+    let method = event.target;
+    const selectedMethod = document.getElementById('about-us');
+
+    method.style.backgroundColor = 'rgba(151, 167, 191, 0.57)';
+    selectedMethod.textContent = method.textContent;
+
+    setVisualHintToSelectedModality(selectedMethod.textContent);
+
+}
+
+function getSelectedOption() {
+
+    let status = 'default';
+    const selectedOption = document.getElementById('about-us');
+
+    if (!checkEmptyField()) {
+
+        status = selectedOption.textContent;
+
+    }
+
+    return status;
 
 }
 

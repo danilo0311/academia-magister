@@ -13,8 +13,8 @@
 
 .address-components {
 
-    width: 80%;
-
+    width         : 80%;
+    
 }
 
 #address-components-community {
@@ -25,7 +25,10 @@
 
 #address-component {
 
-    margin-top: 3%;
+    margin-top    : 3%;
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
 
 }
 
@@ -98,5 +101,12 @@
 
     content: "información legal";
     color  : rgb(12, 198, 254);
+
+}
+
+#warn-empty-student-address {
+
+    position  : absolute;
+    margin-top: 11%;
 
 }

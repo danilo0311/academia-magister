@@ -1,4 +1,6 @@
 import EnrollmentProgressBar from "../../../../Landing/components/EnrollmentProgressBar/EnrollmentProgressBar";
+import AboutUs from "./AboutUs";
+import PreferedaymentMethod from "./PreferedPaymentMethod";
 
 function NextStepButton() {
 
@@ -17,11 +19,29 @@ function NextStepButton() {
 
 }
 
+function checkEmptyFields() {
+
+    let status = true;
+
+    const paymentMethod = new PreferedaymentMethod();
+    const aboutUs = new AboutUs();
+
+    const fields = [paymentMethod.getPaymentmethod(), aboutUs.getAboutUs()];
+
+    console.log(fields)
+    // if (!== 'default') {
+
+    //     status = false;
+
+    // }
+
+    return status;
+
+}
 
 function markAsCompleted() {
 
-    const paymentMethodContainer = document.getElementById('payment-method-container');
-
+    checkEmptyFields();
 
 }
 
