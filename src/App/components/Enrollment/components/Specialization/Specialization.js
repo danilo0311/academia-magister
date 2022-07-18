@@ -21,7 +21,7 @@ class Specialization extends React.Component {
                 <div id="specialization-component-inputs">
 
                     <section className="standard-flex-wrapper">
-                        
+
                         <Fields></Fields>
                         <Provinces></Provinces>
 
@@ -38,6 +38,30 @@ class Specialization extends React.Component {
         );
 
     }
+
+    getSpecialization = () => {
+
+        return getSpecialization();
+
+    }
+
+}
+
+function getSpecialization() {
+
+    const field = new Fields();
+    const province = new Provinces();
+    const studentCategory = new StudentCategory();
+
+    const specialization = {
+
+        'rama': field.getField(),
+        'provincia': province.getProvince(),
+        'nuevo_alumno': studentCategory.getCategory()
+
+    }
+
+    return specialization;
 
 }
 

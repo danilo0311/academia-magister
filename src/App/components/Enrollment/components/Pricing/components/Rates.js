@@ -23,6 +23,13 @@ class Rates extends React.Component {
 
     }
 
+
+    getRate = ()=>{
+
+        return getRate();
+
+    }
+
 }
 
 function createRates() {
@@ -52,5 +59,13 @@ setTimeout(() => {
     createRates();
 
 }, 200);
+
+
+function getRate() {
+
+    const selectedRate = document.getElementById('select-rate');
+    return selectedRate.value;
+
+}
 
 export default Rates;

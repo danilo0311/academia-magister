@@ -16,7 +16,7 @@ class PreferedaymentMethod extends React.Component {
 
                     <div className="standard-flex-wrapper payment-method-button-wrapper">
 
-                        <button className="standard-button payment-method-button" onClick={selectPaymentMethod}>Tarjeta de crédito/débito(recomendado)</button>
+                        <button className="standard-button payment-method-button" onClick={selectPaymentMethod}>Tarjeta de crédito o débito(recomendado)</button>
                         <button className="standard-button payment-method-button" onClick={selectPaymentMethod}>Transferencia bancaria</button>
 
                     </div>
@@ -32,7 +32,7 @@ class PreferedaymentMethod extends React.Component {
 
     }
 
-    getPaymentmethod = () => {
+    getPaymentMethod = () => {
 
         return getSelectedPaymentMethod();
 

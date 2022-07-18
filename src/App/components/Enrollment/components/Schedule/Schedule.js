@@ -22,7 +22,7 @@ class Schedule extends React.Component {
                     <Modality></Modality>
                     <Schedules></Schedules>
                     <NextStepButton></NextStepButton>
-                    
+
                 </div>
 
             </div>
@@ -30,6 +30,26 @@ class Schedule extends React.Component {
         );
 
     }
+
+    getSchedule = () => {
+
+        return getSchedule();
+
+    }
+
+}
+
+function getSchedule() {
+
+    const modality = new Modality();
+    const schedules = new Schedules();
+
+    const schedule = {
+        'modalidad': modality.getModality(),
+        'horario': schedules.getSchedule()
+    }
+
+    return schedule;
 
 }
 

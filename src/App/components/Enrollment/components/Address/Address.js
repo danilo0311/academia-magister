@@ -1,6 +1,6 @@
 import React from "react";
 import ComponentName from "./component/ComponentName";
-import Comunity from "./component/Comunity";
+import Community from "./component/Community";
 import Consentment from "./component/Consentment";
 import Location from "./component/Location";
 import NextStepButton from "./component/NextStepButton";
@@ -22,7 +22,7 @@ class Address extends React.Component {
 
                 <div id="student-profile-components-container">
 
-                    <Comunity></Comunity>
+                    <Community></Community>
                     <StudentAddress></StudentAddress>
 
                     <div id="student-address-inline-wrapper" className="standard-flex-wrapper">
@@ -43,6 +43,37 @@ class Address extends React.Component {
         );
 
     }
+
+    getAddress = () =>{
+
+        return getAddress();
+        
+    }
+
+}
+
+function getAddress() {
+
+    const community = new Community();
+    const studentAddress = new StudentAddress();
+    const location = new Location();
+    const province = new Province();
+    const postalCode = new PostalCode();
+    const consentment = new Consentment();
+
+    const address = {
+
+        'comunidad_de_examen': community.getCommunity(),
+        'direccion': studentAddress.getAddress(),
+        'localidad': location.getLocation(),
+        'provincia': province.getProvince(),
+        'codigo_postal': postalCode.getPostalCode(),
+        'informacion_legal': consentment.getConsentments(),
+        'proteccion_de_datos': consentment.getConsentments()
+
+    }
+
+    return address;
 
 }
 

@@ -28,6 +28,26 @@ class Pricing extends React.Component {
 
     }
 
+    getRate = () =>{
+
+        return getRate();
+
+    }
+
+}
+
+function getRate(){
+
+    const rate = new Rates();
+
+    const selectedRate = {
+
+        'tarifa': rate.getRate()
+
+    }
+    
+    return selectedRate;
+
 }
 
 export default Pricing;

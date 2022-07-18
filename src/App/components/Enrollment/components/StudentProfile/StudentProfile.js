@@ -40,6 +40,32 @@ class StudentProfile extends React.Component {
 
     }
 
+    getProfile = () =>{
+
+        return getStudentProfile();
+
+    }
+
+}
+
+function getStudentProfile() {
+
+    const fullName = new FullName();
+    const dni = new DNI();
+    const mobile = new Mobile();
+    const email = new Email();
+
+    const studentProfile = {
+
+        'nombre_completo': fullName.getFullName(),
+        'dni': dni.getDNI(),
+        'movil': mobile.getMobile(),
+        'email': email.getEmail()
+
+    }
+
+    return studentProfile;
+
 }
 
 export default StudentProfile;

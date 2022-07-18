@@ -11,7 +11,7 @@ class Requests {
         get('http://localhost:3001/provincias', (provinces) => callBack(provinces));
 
     }
-    
+
     getModalities = (callBack) => {
 
         get('http://localhost:3001/modalidades', (modalities) => callBack(modalities));
@@ -36,6 +36,12 @@ class Requests {
 
     }
 
+    createSubscription = (subscription, callBack) => {
+
+        post('http://localhost:3001/nueva-matricula/' + JSON.stringify(subscription), (result) => { callBack(result) });
+
+    }
+
 }
 
 function get(endPoint, callBack) {
@@ -46,6 +52,30 @@ function get(endPoint, callBack) {
 
             const parsedData = JSON.parse(data)
             callBack(parsedData);
+
+        });
+
+}
+
+function post(endPoint, callBack) {
+
+    const config = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    }
+
+    fetch(endPoint, config)
+        .then(response => response.json())
+        .then((data) => {
+
+            callBack(JSON.parse(data));
+
+        })
+        .catch((err) => {
+
+            if (err) throw err;
 
         });
 
